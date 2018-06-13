@@ -1,4 +1,4 @@
-# Devcamp Application Portofolio
+# Devcamp Application Portfolio
 
 > this is a Ruby on Rails application that allows users to create their own portofolios.
 
@@ -6,7 +6,7 @@
 
 - Real time chat engine for comments
 - Blog 
-- Portofolio
+- Portfolio
 - Drag and drop interface
 
 ### Code Example
