@@ -1,5 +1,5 @@
 class Portfolio < ApplicationRecord
-
+  include Placeholder
   validates_presence_of :title, :body, :main_image, :thumb_image
 
   # Alternative (not as good practice) custom scoe
@@ -18,8 +18,8 @@ class Portfolio < ApplicationRecord
     # if self.main_image == nil
     #   self.main_image = ...
     # end
-    self.main_image ||= "http://via.placeholder.com/600x400"
-    self.thumb_image ||= "http://via.placeholder.com/300x150"
+    self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
+    self.thumb_image ||= Placeholder.image_generator(height: '350', width: '200')
   end
 
 end
